@@ -54,6 +54,6 @@ header .ham_menu{width: 30px;margin-right: 30px;}
 .two_column_sec  .heading_cont{text-align: justify;right: 0;position: absolute;width: 50%;top:0;height: 100%;right: 10%;}
 .two_column_sec  .absolute_sec .absolute_img{position: absolute;left: 0;top: 100px;}
 .two_column_sec   .logo_blob{    position: absolute;bottom: 20px;right: -100px;width: 180px;}
-/* .two_column_sec   .content_container{padding-right:120px;line-height: 1.5;} */
+.two_column_sec   .content_container{padding-right:120px;line-height: 1.5;}
 .two_column_sec .second_sec{margin-top: -80px;}
 
