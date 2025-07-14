@@ -153,10 +153,224 @@
           Experience a world where every amenity is crafted to
           <span class="block">elevate your lifestyle.</span>
         </p>
-        <div class="row">sj</div>
+        <div class="position-relative">
+          <div class="swiper-container">
+            <div class="swiper-wrapper" id="swiperWrapper">
+              <div class="slide">
+                <img
+                  src="./assets/images/beyond-comfort/float-tanks.jpg"
+                  alt="Float Tanks"
+                />
+                <div class="slide-content">
+                  <h2 class="slide-title">Float Tanks</h2>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./assets/images/beyond-comfort/red-light.png"
+                  alt="Red Light Therapy"
+                />
+                <div class="slide-content">
+                  <h2 class="slide-title">Red Light Therapy</h2>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./assets/images/beyond-comfort/baths.jpg"
+                  alt="Contrast Baths"
+                />
+                <div class="slide-content">
+                  <h2 class="slide-title">Contrast Baths</h2>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/beyond-comfort/beyond_comfort_bg.png"
+                  alt="Contrast Baths"
+                />
+                <div class="slide-content">
+                  <h2 class="slide-title">Dummy</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="nav-arrow prev" onclick="prevSlide()"></button>
+          <button class="nav-arrow next" onclick="nextSlide()"></button>
+        </div>
       </div>
     </section>
 
+    <!-- Visual Journey -->
+
+    <section class="py_section beyond-comfort">
+      <div class="container">
+        <h2 class="heading">Visual Journey</h2>
+        <p class="paragraph">
+          Step into a world where every frame captures the essence of
+          <span class="block">beauty and innovation</span>
+        </p>
+        <div class="position-relative">
+          <div class="swiper-container">
+            <div class="swiper-wrapper" id="swiperWrapper">
+              <div class="slide">
+                <img
+                  src="./assets/images/beyond-comfort/float-tanks.jpg"
+                  alt="Float Tanks"
+                />
+                <div class="slide-content">
+                  <h2 class="slide-title">Float Tanks</h2>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./assets/images/beyond-comfort/red-light.png"
+                  alt="Red Light Therapy"
+                />
+                <div class="slide-content">
+                  <h2 class="slide-title">Red Light Therapy</h2>
+                </div>
+              </div>
+
+              <div class="slide">
+                <img
+                  src="./assets/images/beyond-comfort/baths.jpg"
+                  alt="Contrast Baths"
+                />
+                <div class="slide-content">
+                  <h2 class="slide-title">Contrast Baths</h2>
+                </div>
+              </div>
+              <div class="slide">
+                <img
+                  src="./assets/images/beyond-comfort/beyond_comfort_bg.png"
+                  alt="Contrast Baths"
+                />
+                <div class="slide-content">
+                  <h2 class="slide-title">Dummy</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="nav-arrow prev" onclick="prevSlide()"></button>
+          <button class="nav-arrow next" onclick="nextSlide()"></button>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let currentSlideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const dots = document.querySelectorAll(".dot");
+      const wrapper = document.getElementById("swiperWrapper");
+      let slidesPerView = window.innerWidth > 768 ? 3 : 1;
+      let maxSlideIndex = slides.length - slidesPerView;
+
+      function updateSlidesPerView() {
+        slidesPerView = window.innerWidth > 768 ? 3 : 1;
+        maxSlideIndex = slides.length - slidesPerView;
+
+        // Reset to first slide if current position is invalid
+        if (currentSlideIndex > maxSlideIndex) {
+          currentSlideIndex = 0;
+        }
+
+        showSlide(currentSlideIndex);
+      }
+
+      function showSlide(index) {
+        const slideWidth = window.innerWidth > 768 ? 33.333 : 100;
+        const translateX = -index * slideWidth;
+        wrapper.style.transform = `translateX(${translateX}%)`;
+
+        // Update active dot
+        dots.forEach((dot) => dot.classList.remove("active"));
+        if (dots[index]) {
+          dots[index].classList.add("active");
+        }
+      }
+
+      function nextSlide() {
+        if (currentSlideIndex < maxSlideIndex) {
+          currentSlideIndex++;
+        } else {
+          currentSlideIndex = 0;
+        }
+        showSlide(currentSlideIndex);
+      }
+
+      function prevSlide() {
+        if (currentSlideIndex > 0) {
+          currentSlideIndex--;
+        } else {
+          currentSlideIndex = maxSlideIndex;
+        }
+        showSlide(currentSlideIndex);
+      }
+
+      function currentSlide(index) {
+        currentSlideIndex = Math.min(index - 1, maxSlideIndex);
+        showSlide(currentSlideIndex);
+      }
+
+      // Handle window resize
+      window.addEventListener("resize", updateSlidesPerView);
+
+      // Initialize
+      updateSlidesPerView();
+
+      // Auto-play functionality (optional)
+      let autoPlay = setInterval(nextSlide, 5000);
+
+      // Pause auto-play on hover
+      const container = document.querySelector(".swiper-container");
+      container.addEventListener("mouseenter", () => {
+        clearInterval(autoPlay);
+      });
+
+      container.addEventListener("mouseleave", () => {
+        autoPlay = setInterval(nextSlide, 5000);
+      });
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") prevSlide();
+        if (e.key === "ArrowRight") nextSlide();
+      });
+
+      // Touch/swipe support for mobile
+      let startX = 0;
+      let currentX = 0;
+      let isDragging = false;
+
+      container.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+      });
+
+      container.addEventListener("touchmove", (e) => {
+        if (!isDragging) return;
+        currentX = e.touches[0].clientX;
+      });
+
+      container.addEventListener("touchend", () => {
+        if (!isDragging) return;
+
+        const diffX = startX - currentX;
+
+        if (Math.abs(diffX) > 50) {
+          if (diffX > 0) {
+            nextSlide();
+          } else {
+            prevSlide();
+          }
+        }
+
+        isDragging = false;
+      });
+    </script>
     <script src="assets/js/bootstrap.bundle.js"></script>
   </body>
 </html>
