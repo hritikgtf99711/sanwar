@@ -82,3 +82,97 @@ header .ham_menu{width: 30px;margin-right: 30px;}
 .spirit_sec .overlay_font{font-weight: 700;font-size: 70px;color: #C9C9C91A;}
 
 .cta_sec_2 .small_txt{font-size: 20px;}
+/* beyond-comfort */
+.beyond-comfort {
+  background: url("../images/beyond-comfort/beyond_comfort_bg.png");
+}
+
+/* swiper */
+.swiper-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 80px 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 33.333%;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 8/10;
+  margin: 0 3px;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-content {
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  background: transparent;
+  color: #333;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.slide-title {
+  font-size: 15px;
+  font-weight: 500 !important;
+  letter-spacing: 1.4px;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-arrow.prev {
+  left: -25px;
+}
+
+.nav-arrow.next {
+  right: -25px;
+}
+
+.nav-arrow::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.nav-arrow.prev::before {
+  transform: rotate(135deg);
+}
+
