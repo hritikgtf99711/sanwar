@@ -47,16 +47,16 @@ header a{margin: 0!important;}
 header .logo_container .partition_line{    height: 60px;
     width: 1px;
     background-color: #ffffff5c;
-    margin: 0 15px;}
+    margin: 0 20px;}
     header .contact_icons{display: flex;align-items: center;gap:15px;padding: 0;margin: 0;}
 header .contact_icons li{display: flex;color: #fff;}
 header .contact_icons li img{margin-right: 15px;}
-header .contact_detail{display: flex;align-items: center;gap:30px}
+header .contact_detail{display: flex;align-items: center;gap:45px}
 header .contact_detail .partition_line{height: 30px;width: 1px;background-color: #ffffff5c;margin: 0 10px;}
 /* header .logo_container a:nth-child(1){    border-right: 1px solid #fff;
     margin: 0;}
     header .logo_container a:nth-child(2){padding-left: 15px;} */
-header .ham_menu{width: 30px;margin-right: 30px;}
+header .ham_menu{width: 30px;cursor: pointer;}
 .heading {text-align: center;font-size: 34px;margin-bottom: 24px;}
 .block {display: block;}
 .paragraph {line-height: 27px;text-align: center;font-size: 16px;letter-spacing: 2px;}
@@ -70,7 +70,8 @@ header .ham_menu{width: 30px;margin-right: 30px;}
 .banner_sec .banner_item_main .typology{left: 300px;}
 .banner_sec .banner_item_main .price{right: 240px;}
 .banner_sec .elevation_img{z-index: 1;position: relative;}
-.banner_sec .gallery_item{    position: absolute;z-index: 1;left: 52px;bottom: 30px;cursor: pointer;display: flex;gap:12px;align-items: center;}
+.banner_sec .gallery_item{position: absolute;z-index: 1;left: 52px;bottom: 30px;cursor: pointer;display: flex;gap:12px;align-items: center;padding: 10px 16px;background: rgba(0, 0, 0, 0.01);backdrop-filter: blur(25px);}
+.banner_sec .gallery_item img{width: 30px;}
 .banner_sec .gallery_item span{line-height: normal;}
 .two_column_sec  .absolute_sec .image_container{position: relative;}
 .two_column_sec p{line-height: 1.8;}
@@ -97,6 +98,7 @@ header .ham_menu{width: 30px;margin-right: 30px;}
 .cta_sec .table_container .book-btn{border: none;border-radius: 6px;padding: 8px 30px;}
 
 .spirit_sec .overlay_font{font-weight: 700;font-size: 70px;color: #C9C9C91A;}
+.spirit_sec .heading{line-height:1.5;}
 
 .cta_sec_2 .small_txt{font-size: 20px;}
 /* beyond-comfort */
@@ -106,7 +108,7 @@ header .ham_menu{width: 30px;margin-right: 30px;}
 .beyond_comfort_sec{position: relative;overflow: hidden;}
 .beyond_comfort_sec .swiper-container {position: relative;width: 100%;margin: 0 auto;}
 .beyond_comfort_sec .slide-content {color: #333;padding: 20px 10px;text-align: center;}
-.beyond_comfort_sec .slide-title {font-size: 15px;font-weight: 500 !important;letter-spacing: 1.4px;margin: 0;letter-spacing: 0.5px}
+.beyond_comfort_sec .slide-title {font-size: 18px;font-weight: 500 !important;letter-spacing: 1.4px;margin: 0;letter-spacing: 0.5px;padding-top: 10px;}
 .beyond_comfort_sec .nav-arrow {position: absolute;top: 48%;transform: translateY(-50%);width: 50px;height: 50px;background: var(--primary-color);order: none;border-radius: 50%;cursor: pointer;z-index: 10;display: flex;align-items: center;justify-content: center;transition: all 0.3s ease;box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);border: none;}
 .beyond_comfort_sec .nav-arrow{background-color: var(--primary-color);}
 .beyond_comfort_sec .nav-arrow.prev {left: -25px;}
@@ -115,10 +117,10 @@ header .ham_menu{width: 30px;margin-right: 30px;}
 .beyond_comfort_sec .nav-arrow.prev {transform: rotate(0deg);}
 
 
-.masterplan_sec .blob_img{position: absolute;right: 88px;width: 500px;top: 36px;z-index: -1;opacity: 0.1;}
+.masterplan_sec .blob_img{position: absolute;right: 88px;width: 500px;top: 0;z-index: -1;opacity: 0.1;}
 
 .floor_plan_sec .nav-link{border: 1px solid #000;border-radius: 0;color: #000;}
-.floor_plan_sec .nav-link.active{background-color: var(--primary-color);border-color: var(--primary-color);}
+.floor_plan_sec .nav-link.active{background-color: var(--primary-color);border-color: var(--primary-color);font-weight: 600;}
 .floor_plan_sec .tabs_main_container {gap:100px;align-items: center;position: relative;}
 .floor_plan_sec .tabs_main_container .tab-container{flex:0 0 22%}
 .floor_plan_sec .tabs_main_container .tab-content{flex:0 0 calc(78% - 100px)}
@@ -129,7 +131,7 @@ left: 0;opacity: 0.1;}
 
 .tour_sec .uppercase_text{font-size: 18px;line-height: 1.7;}
 .tour_sec .uppercase_text span{text-transform: uppercase;font-weight: 500;}
-.tour_sec .blob_img{width: 100px;opacity: 0.8;margin-left: 50px;}
+.tour_sec .blob_img{width: 100px;opacity: 0.6;margin-left: 50px;}
 
 .visual_sec .blob_img_1{top: 178px;position: absolute;left: 145px;opacity: 0.2;}
 .visual_sec .view_all{display: flex;align-items: center;justify-self: center}
