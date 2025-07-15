@@ -67,6 +67,12 @@ header .ham_menu{width: 30px;cursor: pointer;}
 .banner_sec .bg_banner{object-fit: cover;}
 .banner_sec .absolute_container{position: absolute;bottom: 0;left: 0;width: 100%;}
 .banner_sec .banner_item_main .typology,.banner_sec .banner_item_main .price{position: absolute;bottom: 0;text-align: center;}
+.banner_sec .banner_item_main h1{    position: absolute;
+    top: 25%;
+    z-index: 88;
+    left: 50%;
+    transform: translateX(-50%);}
+.banner_sec .banner_item_main .elevation_img{height: 105vh;}
 .banner_sec .banner_item_main .typology{left: 300px;}
 .banner_sec .banner_item_main .price{right: 240px;}
 .banner_sec .elevation_img{z-index: 1;position: relative;}
@@ -176,4 +182,8 @@ footer .desclaimer_txt a{color: var(--primary-color);text-decoration: none;}
 
 .abs_sec{transform: scale(0.8);}
 
+
+.sidebar_menu{position: fixed;top: 0;right: 0;height: 100%;width: 20%;z-index: 999;}
+.sidebar_menu li{list-style: none;}
+.sidebar_menu li a{list-style: none;text-decoration: none;color: #000;font-size: 20px;color:var(--primary-color)}
 /* .direction_sec .curve_img_container:nth-child(1){margin-top: -60px;} */
