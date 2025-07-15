@@ -23,9 +23,9 @@
 <div class="contact_detail">
 
   <ul class="contact_icons">
-    <li><img src="/assets/icons/virtual_tour_v.svg" alt="virtual_tour"/> <span>Instant Virtual Tour</span></li>
+    <li><a href="#"><img src="/assets/icons/virtual_tour_v.svg" alt="virtual_tour"/> <span>Instant Virtual Tour</span></a></li>
     <li class="partition_line"></li>
-      <li><img src="/assets/icons/call.svg" alt="virtual_tour"/>  <span>Call Now</span></li>
+      <li><a href="#"><img src="/assets/icons/call.svg" alt="virtual_tour"/>  <span>Call Now</span></a></li>
   </ul>
   <img src="assets/icons/ham_menu.svg" class="ham_menu" alt="ham menu" />
 </div>
@@ -33,7 +33,7 @@
     </div>
   </header>
 
-  <section class="banner_sec position-relative">
+  <section class="banner_sec position-relative" id="home">
     <img src="assets/images/bg_banner.jpg" lazy="true" class="bg_banner w-100 h-100" alt="bg_banner" />
     <div class="absolute_container">
       <div class="banner_item_main">
@@ -44,7 +44,7 @@
         </div>
         <div class="banner_item">
           <h1 class="text-center mb-3">Four-side Open Residences</h1>
-          <img src="assets/images/elevation.jpg" class="w-100 elevation_img" alt="elevation" />
+          <img src="assets/images/elevation_1.avif" class="w-100 elevation_img" alt="elevation" />
         </div>
         <div class="banner_item price">
           <span class="mb-2 d-block">Starting Price</span>
@@ -59,13 +59,13 @@
     </div>
   </section>
 
-  <section class="py_section two_column_sec">
-    <div class="d-flex position-relative pt-5">
-      <div class="position-relative pt-5">
+  <section class="py_section two_column_sec" id="about">
+    <div class="d-lg-flex flex_div position-relative pt-5">
+      <div class="position-relative d-lg-block d-none pt-5">
         <img src="assets/icons/logo_blob.png" alt="" class="logo_blob" />
         <img src="assets/images/living_area.jpg" alt="living area" />
       </div>
-      <div class="heading_cont">
+      <div class="heading_cont d-lg-block d-none">
         <h2 class="text-end heading mb-1">Goodness and wisdom</h2>
         <h2 class="m-0">
           come from all directions when you are open to embrace them. Positive
@@ -73,7 +73,21 @@
         </h2>
       </div>
       <div class="container m-auto content_container">
-        <div class="col-md-7 ms-auto">
+        <div class="col-lg-5">
+            <div class="heading_cont">
+        <h2 class="heading mb-1">Goodness and wisdom</h2>
+        <h2 class="m-0">
+          come from all directions when you are open to embrace them. Positive
+          influences and blessings will always find their way to you.
+        </h2>
+         <div class="position-relative pt-5">
+        <img src="assets/icons/logo_blob.png" alt=""   class="logo_blob" />
+        <img src="assets/images/living_area.jpg" class="w-100 position-relative" alt="living area" />
+      </div>
+    
+      </div>
+        </div>
+        <div class="col-lg-7 position-relative ms-auto pt-lg-0 pt-4">
           <p>
             TARC ISHVA -
             <span class="fw-300">a super luxury indulgence is a pioneering venture that
@@ -88,20 +102,20 @@
     <div class="position-relative second_sec">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 mt-auto">
+          <div class="col-lg-6 mt-auto order-lg-0 order-1 ">
             <div class="">
-              <h2 class="text-start mb-5">
+              <h2 class="text-start mb-lg-5 mb-3">
                 Goodness and grace unfold
                 <span class="d-lg-block d-none"></span> in all directions
               </h2>
-              <div class="col-lg-8">
-                <p class="w-100 fw-300">
+              <div class="col-lg-8 ">
+                <p class="w-100 fw-300 mb-0">
                   The four cardinal directions traverse way beyond
                   <span class="d-xl-block d-none"></span> than being mere
                   pointers on a compass. They are cornerstones that shape
                   lives infusing them with purpose, energy and harmony.
                 </p>
-                <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn mt-5 pt-4">Know More
+                <a href="#"   data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn mt-lg-5 pt-4">Know More
                   <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                       <circle cx="65" cy="43" r="41.8" stroke="black" stroke-width="1.6" />
                       <path
@@ -113,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-5 m-auto">
+          <div class="col-lg-5 m-auto pb-lg-0 pb-5">
             <img src="assets/images/green_peace.jpg" alt="green" class="w-100" />
           </div>
         </div>
@@ -122,7 +136,7 @@
     </div>
     </div>
   </section>
-  <section class=" direction_sec">
+  <section class="direction_sec" id="direction">
     <div class="container position-relative">
       <div class="text-center abs_sec">
         <div class="d-flex justify-content-center curve_img_container">
@@ -163,9 +177,9 @@
           </div>
     </div>
   </section>
-  <section class="py_section cta_sec cta_sec_1">
+  <section class="py_section cta_sec cta_sec_1" id="pricing">
     <div class="container">
-      <div class="col-md-5 text-center col-12 m-auto">
+      <div class="col-lg-5 col-12 text-center m-auto">
         <h2 class="heading text-white">CLUB ISHVA - GRACIOUS EXCLUSIVE OPULENCE</h2>
       </div>
       <div class="row justify-content-center mt-5">
@@ -178,32 +192,32 @@
           </ul>
           <ul class="flex_cont">
             <li class="td typology">3 BHK + Study</li>
-            <li class="td  pricing">₹ 2.38 Cr*</li>
+            <li class="td  pricing">₹ <span>2.38</span> Cr*</li>
             <li class="td area">250-300 Sq.ft.</li>
-            <li class="tb"><button class="book-btn">Book Now</button></li>
+            <li class="tb"><button data-bs-toggle="modal" data-bs-target="#formModal" class="book-btn">Book Now</button></li>
           </ul>
           <ul class="flex_cont">
             <li class="td typology">3 BHK + HR</li>
-            <li class="td pricing">₹ 2.38 Cr*</li>
+            <li class="td pricing">₹ <span>2.38</span> Cr*</li>
             <li class="td area">250-300 Sq.ft.</li>
-            <li class="td"><button class="book-btn">Book Now</button></li>
+            <li class="td"><button data-bs-toggle="modal" data-bs-target="#formModal" class="book-btn">Book Now</button></li>
           </ul>
           <ul class="flex_cont">
             <li class="td typology">4 BHK + HR</li>
-            <li class="td  pricing">₹ 2.38 Cr*</li>
+            <li class="td  pricing">₹ <span>2.38</span> Cr*</li>
             <li class="td area">250-300 Sq.ft.</li>
-            <li class="td"><button class="book-btn">Book Now</button></li>
+            <li class="td"><button data-bs-toggle="modal" data-bs-target="#formModal" class="book-btn">Book Now</button></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py_section spirit_sec">
+  <section class="py_section spirit_sec" id="spirit_sec">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-12 mt-auto">
-          <div class="col-md-9">
+        <div class="col-lg-6 col-12  order-lg-0 order-1 mt-auto">
+          <div class="col-lg-9 position-relative pt-lg-0 pt-4">
             <h5 class="overlay_font">Revitalizing the Spirit</h5>
             <h2 class="heading text-start">Revitalizing the Spirit:
               Combining Ancient Wisdom
@@ -211,7 +225,7 @@
             <p class="paragraph fw-300  text-start">Establish a cutting-edge Human Performance Center and Biohacking
               Lab, integrating comprehensive health and wellness solutions. Enhance body and mind using state-of-the-art
               technology and specialized techniques, ideal for all ages in urban environments like Delhi.</p>
-            <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn">Know More
+            <a href="#"   data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn">Know More
               <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                   <circle cx="65" cy="43" r="41.8" stroke="black" stroke-width="1.6" />
                   <path
@@ -222,7 +236,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-6 row justify-content-center mt-5">
+        <div class="col-lg-6 row justify-content-center mt-5">
           <img src="/assets/images/night_view.jpg" alt="night_view" class="w-100" />
         </div>
       </div>
@@ -230,7 +244,7 @@
   </section>
 
   <!-- Beyond Comfort -->
-  <section class="py_section bg_slide_clr beyond_comfort_sec">
+  <section class="py_section bg_slide_clr beyond_comfort_sec" id="beyond_comfort">
     <div class="container position-relative">
       <h2 class="heading">Beyond Comfort, Into Luxury</h2>
       <p class="paragraph fw-normal">
@@ -283,23 +297,23 @@
     </div>
   </section>
 
-  <section class="py_section masterplan_sec">
+  <section class="py_section masterplan_sec" id="masterplan_sec">
     <div class="container position-relative">
       <h2 class="heading">Master Plan</h2>
       <p class="paragraph fw-normal">
         Experience affordable luxury, where style and quality unite to create <span class="d-lg-block "></span> a more
         attainable refined lifestyle
       </p>
-      <div class="col-md-8 m-auto">
+      <div class="col-lg-8 m-auto">
         <img src="/assets/icons/logo_blob.png" alt="logo blob" class="blob_img" />
         <div class="row position-relative  mt-5">
-          <div class="col-md-7">
+          <div class="col-lg-7 col-8">
             <img src="/assets/images/masterplan/masterplan_map.jpg" class="w-100" alt="masterplan map" />
           </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-3 m-auto">
+          <div class="col-md-1 d-lg-block d-none"></div>
+          <div class="col-lg-3  col-4 m-auto">
             <img src="/assets/images/masterplan/masterplan_hightlight.jpg" class="w-100" alt="masterplan highlight" />
-            <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn mt-4">View All
+            <a href="#"   data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn mt-4">View All
               <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                   <circle cx="65" cy="43" r="41.8" stroke="black" stroke-width="1.6" />
                   <path
@@ -315,7 +329,7 @@
   </section>
 
 
-  <section class="py_section bg_slide_clr position-relative floor_plan_sec">
+  <section class="py_section bg_slide_clr position-relative floor_plan_sec" id="floorPlan">
     <img src="/assets/icons/logo_blob.png" alt="logo blob" class="blob_img_1" />
     <img src="/assets/icons/logo_blob.png" alt="logo blob" class="blob_img_2" />
 
@@ -342,7 +356,7 @@
                 aria-selected="false">4 BHK + HR</button>
 
             </div>
-            <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn justify-content-center mt-4">View All
+            <a href="#"   data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn justify-content-center mt-4">View All
               <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                   <circle cx="65" cy="43" r="41.8" stroke="black" stroke-width="1.6" />
                   <path
@@ -372,9 +386,9 @@
     </div>
   </section>
 
-  <section class="py_section  position-relative tour_sec">
+  <section class="py_section  position-relative tour_sec" id="virtual_tour">
     <div class="container position-relative">
-      <div class="col-md-5 m-auto">
+      <div class="col-lg-5 col-8 m-auto">
         <p class="paragraph fw-normal uppercase_text">
           Enjoy a seamless, guided <span>virtual site tour</span>
           showcasing every detail of the project <span class="d-lg-block"></span>
@@ -383,10 +397,10 @@
       </div>
 
       <div class="row mt-5">
-        <div class="col-md-4 m-auto d-flex justify-content-center">
+        <div class="col-lg-4 m-auto order-lg-0 order-1 d-flex justify-content-center">
           <div class="mb-5">
             <img src="/assets/icons/logo_blob.png" alt="logo blob" class="blob_img" />
-            <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn justify-content-center mt-4">Virtual Tour
+            <a href="#"   data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn justify-content-center mt-4">Virtual Tour
               <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                   <circle cx="65" cy="43" r="41.8" stroke="#000" stroke-width="1.6" />
                   <path
@@ -398,14 +412,14 @@
           </div>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-lg-8 col-8 m-auto">
           <img src="assets/images/tab_image.jpg" alt="tab image" class="w-100" />
         </div>
       </div>
     </div>
   </section>
 
-  <section class="py_section bg_slide_clr position-relative visual_sec">
+  <section class="py_section bg_slide_clr position-relative visual_sec" id="visual_sec">
     <img src="/assets/icons/logo_blob.png" alt="logo blob" class="blob_img_1" />
     <div class="position-relative">
       <h2 class="heading">VISUAL JOURNEY</h2>
@@ -417,18 +431,25 @@
         <div class="swiper-container overflow-hidden position-relative" id="swiperWrapperLandScape">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
+               <a href="/assets/images/visualjourney/visual_journey_1.jpg" data-fancybox="highlight">
               <img src="/assets/images/visualjourney/visual_journey_1.jpg" alt="Float Tanks" class="w-100" />
+              </a>
 
             </div>
             <div class="swiper-slide">
-              <img src="/assets/images/visualjourney/visual_journey_1.jpg" alt="Red Light Therapy" class="w-100" />
-            </div>
-            <div class="swiper-slide">
+              <a href="/assets/images/visualjourney/visual_journey_1.jpg" data-fancybox="highlight">
               <img src="/assets/images/visualjourney/visual_journey_1.jpg" alt="Float Tanks" class="w-100" />
-
+              </a>
             </div>
             <div class="swiper-slide">
-              <img src="/assets/images/visualjourney/visual_journey_1.jpg" alt="Red Light Therapy" class="w-100" />
+            <a href="/assets/images/visualjourney/visual_journey_1.jpg" data-fancybox="highlight">
+              <img src="/assets/images/visualjourney/visual_journey_1.jpg" alt="Float Tanks" class="w-100" />
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="/assets/images/visualjourney/visual_journey_1.jpg" data-fancybox="highlight">
+              <img src="/assets/images/visualjourney/visual_journey_1.jpg" alt="Float Tanks" class="w-100" />
+              </a>
             </div>
           </div>
         </div>
@@ -438,7 +459,7 @@
       
         <div class="flex view_all m-auto">
           <img src="/assets/icons/logo_blob.png" class="me-4" alt="Blob img" />
-          <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn justify-content-center ">View All Images
+          <a href="#"   data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn justify-content-center ">View All Images
             <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                 <circle cx="65" cy="43" r="41.8" stroke="#000" stroke-width="1.6" />
                 <path
@@ -459,15 +480,15 @@
   </section>
 
 
-  <section class="py_section  position-relative location_advantage_sec">
+  <section class="py_section  position-relative location_advantage_sec" id="location_advantage_sec">
               <div class="container ">
       <h2 class="heading">Location Advantages</h2>
         <p class="paragraph fw-normal">
           Access to Everything, Steps from Everywhere – Your<span class="d-lg-block"></span> Perfect Location Awaits
         </p>
-      <div class="col-md-10 mt-5 mx-auto">
+      <div class="col-md-8 mt-5 mx-auto">
             <img src="/assets/images/location_advantage/map.jpg" class="w-100" alt="map"/>
-            <div class="row row-cols-lg-3 g-5 mt-5 justify-content-center">
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 g-lg-5 g-3 mt-5 justify-content-center">
               <div class="col">
                 <div class="text-center loc_item">
                 <span>3 Min</span>
@@ -522,9 +543,9 @@
     </div>
     </div>
   </section>
-  <section class="py_section cta_sec cta_sec_2">
+  <section class="py_section cta_sec cta_sec_2" id="about_developer"> 
     <div class="container">
-      <div class="col-md-8 m-auto">
+      <div class="col-lg-8 m-auto">
         <div class="text-center">
           <img src="/assets/images/logo.png" class="mb-5" alt="cta banner" />
           <h2>About TARC</h2>
@@ -533,7 +554,7 @@
             and unmatched design. With a focus on creating timeless spaces, our exceptional developments blend modern
             sophistication with meticulous attention to detail. ‘Inspired by India’ reflects our progressive mindset,
             blending India’s rich cultural heritage with contemporary luxury.</p>
-          <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn text-white justify-content-center mt-5">Know More
+          <a href="#"   data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn text-white justify-content-center mt-5">Know More
             <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                 <circle cx="65" cy="43" r="41.8" stroke="#fff" stroke-width="1.6" />
                 <path
@@ -548,11 +569,10 @@
     </div>
   </section>
 
-   <section class="py_section  position-relative contact_sec">
+   <section class="py_section  position-relative contact_sec" id="contact_us">
      <div class="container ">
       <div class="row">
-      <div class="col-md-5 m-auto">
-
+      <div class="col-lg-4 m-auto">
       <h2 class="heading text-center">Get Your Quote</h2>
       <form>
         <div class="input_container">
@@ -572,7 +592,7 @@
           <span>I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</span>
         </label>
 
-        <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn mt-5 justify-content-center">SUBMIT NOW
+        <a href="#"   data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn mt-5 justify-content-center">SUBMIT NOW
                   <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                       <circle cx="65" cy="43" r="41.8" stroke="#B18F56" stroke-width="1.6" />
                       <path
@@ -589,7 +609,7 @@
 </div>
 
     </div>
-    <img src="/assets/images/contact/buildingframe.jpg" class="buidling_frame" alt="buildingfram"/>
+    <img src="/assets/images/contact/buildingframe.jpg" class="buidling_frame d-lg-block d-none" alt="buildingfram"/>
     </div>
   </section>
   <hr/>
@@ -601,23 +621,35 @@
     </div>
   </footer>
   <div class="sidebar_menu bg_slide_clr">
-    <div class="cross_icons">
-      <img src="/assets/icons/cross.svg"/>
+    <div class="cross_icon cross_icon_side" >
+      <img src="/assets/icons/cross.svg" height="20" width="20"/>
     </div>
       <ul>
-        <li class="mb-3"><a href="">Home</a></li>
-        <li class="mb-3"><a href="">About</a></li>
-        <li class="mb-3"><a href="">Direction</a></li>
-        <li class="mb-3"><a href="">Pricing</a></li>
-        <li class="mb-3"><a href="">About</a></li>
-         <li><a href="">Master Plan</a></li>
+          <li class="mb-4"><a href="#home">Home</a></li>
+          <li class="mb-4"><a href="#about">About</a></li>
+          <li class="mb-4"><a href="#direction">Direction</a></li>
+          <li class="mb-4"><a href="#pricing">Pricing</a></li>
+          <li class="mb-4"><a href="#about">About</a></li>
+          <li class="mb-4"><a href="#masterplan_sec">Master Plan</a></li>
+          <li  class="mb-4"><a href="#floorPlan">Floor Plan</a></li>
+          <li  class="mb-4"><a href="#virtual_tour">Virtual Tour</a></li>
+          <li  class="mb-4"><a href="#visual_sec">Visual Journey</a></li>
+          <li  class="mb-4"><a href="#location_advantage_sec">Location Advantage</a></li>
+          <li  class="mb-4"><a href="#about_developer">About Developer</a></li>
+          <li  class="mb-4"><a href="#contact_us">Contact Us</a></li>
       </ul>
   </div>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModal" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered contact_sec">
     <div class="modal-content">
       <div class="modal-body p-5  ">
+         <div class="cross_icon" data-bs-dismiss="modal" aria-label="Close">
+      <img src="/assets/icons/cross.svg" height="20" width="20"/>
+    </div>
+    <div class=" modal_header text-center">
+        <img src="assets/images/tarc__newlogo2.png" class="modal_logo" alt="tarc logo"/>
          <h2 class="heading text-center">Get Your Quote</h2>
+        </div>
       <form>
         <div class="input_container">
           <input type="text" class="w-100 mb-3" placeholder="Your Name"/>
@@ -636,7 +668,7 @@
           <span>I authorize company representatives to Call, SMS, Email or WhatsApp me about its products and offers. This consent overrides any registration for DNC/NDNC.</span>
         </label>
 
-        <a href="#"   data-bs-toggle="modal" data-bs-target="#exampleModal" class="know_more_btn mt-5 justify-content-center">SUBMIT NOW
+        <a href="#"  data-bs-toggle="modal" data-bs-target="#formModal" class="know_more_btn  justify-content-center">SUBMIT NOW
                   <span class="arrow_circle"><svg width="108" height="86" viewBox="0 0 108 86" fill="none">
                       <circle cx="65" cy="43" r="41.8" stroke="#B18F56" stroke-width="1.6" />
                       <path
@@ -656,6 +688,23 @@
   <script src="assets/js/bootstrap.bundle.js"></script>
 
   <script>
+   const buttons = document.querySelectorAll('.know_more_btn');
+
+
+buttons.forEach((btn) => {
+  btn.addEventListener('mouseenter', () => {
+    btn.classList.remove('animated');
+    void btn.offsetWidth;
+    btn.classList.add('animated');
+  });
+
+  btn.addEventListener('mouseleave', () => {
+    btn.classList.remove('animated');
+    void btn.offsetWidth;
+    btn.classList.add('animated');
+  });
+});
+
     const swiper = new Swiper('#swiperWrapper', {
       loop: true,
       slidesPerView: 3,
@@ -670,6 +719,23 @@
       scrollbar: {
         el: '.swiper-scrollbar',
       },
+       breakpoints: {
+    320: {
+      slidesPerView: 1.4,
+      centeredSlides:true,
+      slidesOffsetBefore: 20,
+      spaceBetween: 10,
+    },
+    640: {
+      slidesPerView: 2,
+      slidesOffsetBefore: 100,
+      spaceBetween: 15,
+    },
+    1280: {
+      slidesPerView: 3,
+      slidesOffsetBefore: 200,
+      spaceBetween: 20,
+    }}
     });
 
    const swiperLandscape = new Swiper('#swiperWrapperLandScape', {
@@ -692,6 +758,7 @@
     640: {
       slidesPerView: 1.5,
       slidesOffsetBefore: 100,
+      centeredSlides:true,
       spaceBetween: 15,
     },
     1280: {
@@ -732,6 +799,40 @@
                  startIndex: 0
              });
          }
+   
+    document.querySelectorAll(".ham_menu, .cross_icon_side").forEach(element => {
+        element.addEventListener("click", () => {
+            document.querySelector(".sidebar_menu").classList.toggle("active");
+        });
+    });
+
+    document.querySelectorAll('.sidebar_menu a').forEach(anchor => {
+      console.log(anchor)
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            console.log(targetId)
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                document.querySelector(".sidebar_menu").classList.remove("active");
+            }
+        });
+    });
+        window.addEventListener('scroll', function() {
+            const element = document.querySelector('header');
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 100) {
+              element.classList.add('fixed');
+            } else {
+              element.classList.remove('fixed'); 
+            }
+          });
+
   </script>
 </body>
 
