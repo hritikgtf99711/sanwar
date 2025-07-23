@@ -152,7 +152,7 @@ header .call_now_btn img{width: 35px;}
 .banner_sec .pricing_container li h5{display: flex;align-items: center;gap: 15px;}
 .banner_sec .pricing_container li .gradient_line{background: linear-gradient(90deg, #FFFFFF 0%, #635c5100 66.86%);width: 30%;height: 2px;display: inline-block;}
 .banner_sec .pricing_container .price{font-size: 34px;}
-.banner_sec .rounded_circle_sp{position: absolute;top: -60px;right: -12px;}
+.banner_sec .rounded_circle_sp{position: absolute;top: -60px;right: -40px;}
 
 .about_sec .content_container{position: absolute;top: 0;background-color: var(--section-color);width: 85%;left: 50%;top: 48%;transform: translate(-50%,-50%);padding: 80px;border-radius: 30px;}
 .about_sec .content_container .content{padding-bottom: 45px;}
