@@ -27,7 +27,7 @@
           <ul class="contact_icons">
             <li class="call_now_btn"><a href="tel:+917827178271"><img src="assets/icons/call.svg" alt="virtual_tour" />
                 <span>Call Now</span></a></li>
-            <li class="enquire_nowbtn_header"><a href="#" target="_blank"> <span>Enquire Now</span></a></li>
+            <li class="enquire_nowbtn_header"><a href="#"  data-bs-toggle="modal" data-bs-target="#formModal" target="_blank"> <span>Enquire Now</span></a></li>
           </ul>
           <img src="assets/icons/ham_menu.svg" class="ham_menu" alt="ham menu" />
         </div>
@@ -103,7 +103,7 @@
 
 
 
-  <section class="py_section about_sec mb-100" id="about">
+  <section class="py_section about_sec mb-60" id="about">
     <div class="container m-auto">
       <div class="position-relative image_container d-flex align-items-center justify-content-center   text-center">
         <div class="content_container">
@@ -127,7 +127,7 @@
     </div>
   </section>
 
-  <section class="py_section cta_sec cta_one_banner mb-100 position-relative">
+  <section class="py_section cta_sec cta_one_banner mb-60 position-relative">
     <div class="container h-100 m-auto">
       <div class="row h-100">
         <div class="col-lg-6 m-auto">
@@ -332,7 +332,7 @@
     </div>
   </section>
 
-  <section class="py_section position-relative master_plan_sec mb-100" id="masterplan_sec">
+  <section class="py_section position-relative master_plan_sec mb-60" id="masterplan_sec">
     <div class="container">
       <div class="col-lg-8 col-12  text-center m-auto">
         <div class="sub_heading mb-4">
@@ -424,7 +424,7 @@
                 <img class="w-100" src="assets/images/visual_journey/visual_journey_1.webp" alt="visual_journey" />
               </div>
             </div>
-
+<div class="swiper-pagination"></div>
           </div>
 
           <div class="arrow_container">
@@ -443,7 +443,7 @@
 
 
 
-  <section class="py_section position-relative location_sec mb-100" id="location_advantage_sec">
+  <section class="py_section position-relative location_sec mb-60" id="location_advantage_sec">
     <img src="assets/images/location/location-texture.svg" class="location-texture" alt="location-texture" />
     <div class="container position-relative">
       <div class="col-lg-7 col-12  text-center m-auto">
@@ -684,25 +684,27 @@
   };
 
   function submitForm(formId, senderNameId, mobileId, emailId, messageId, vProject) {
-    const submissionAgentInfo = {
-      ...window.AgentInfo,
-      vProject: vProject || window.AgentInfo.vProject
-    };
-    const FormInfo = {
-      SenderControlID: senderNameId,
-      SenderControlMobileID: mobileId,
-      SenderControlEmailID: emailId,
-      SenderControlMsgID: messageId
-    };
+    // const submissionAgentInfo = {
+    //   ...window.AgentInfo,
+    //   vProject: vProject
+    //   window.AgentInfo.vProject
+    // };
+    // const FormInfo = {
+    //   SenderControlID: senderNameId,
+    //   SenderControlMobileID: mobileId,
+    //   SenderControlEmailID: emailId,
+    //   SenderControlMsgID: messageId
+    // };
     // SubmitQueryData(submissionAgentInfo, FormInfo);
   }
 
 const swiper = new Swiper('#swiperCoverflowSlider', {
   slidesPerView: 3,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+    },
   navigation: {
     nextEl: '.next-arrow',
     prevEl: '.prev-arrow',
