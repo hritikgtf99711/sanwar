@@ -216,7 +216,7 @@ left: 0;opacity: 0.1;}
 
 #swiperCoverflowSlider {position: relative;}
 #swiperCoverflowSlider .swiper-slide img{border-radius: 20px;  height: 450px;object-fit: cover;object-position: center;transition: 1s all;}
-.arrow_container .slide_arrow{height: 45px;width: 45px;background: #fff;top:63%;padding: 4px 10px;position: absolute;z-index: 9;transform: translateY(-50%);cursor: pointer;border-radius: 50%;}
+.arrow_container .slide_arrow{height: 45px;width: 45px;background: #fff;top:60%;padding: 4px 10px;position: absolute;z-index: 9;transform: translateY(-50%);cursor: pointer;border-radius: 50%;}
 .arrow_container .slide_arrow.prev-arrow{left: 0;}
 .arrow_container .slide_arrow.next-arrow{right: 20px;}
 
@@ -380,7 +380,9 @@ header .contact_detail a span{display: none;}
 .contact_sec .arrow_circle{height: 60px;width: 60px;;}
 .contact_sec .arrow_circle img{padding: 22px;}
 .arrow_container .slide_arrow.next-arrow {right: 6px;}
-.arrow_container .slide_arrow {top: 64%;}
+    .arrow_container .slide_arrow {
+        top: calc(50% + 70px);
+    }
 .heading{font-size: 20px;line-height:1.6;}
 .py_section{padding: 50px 0;}
 .sub_heading span{font-size: 18px;}
