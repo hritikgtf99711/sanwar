@@ -379,6 +379,7 @@ header .contact_detail a span{display: none;}
 .contact_sec .arrow_circle{height: 60px;width: 60px;;}
 .contact_sec .arrow_circle img{padding: 22px;}
 .arrow_container .slide_arrow.next-arrow {right: 6px;}
+header .logo_container img{max-width: 140px;}
 #formModal .cross_icon img{height: 30px;width: 30px;;}
 .arrow_container .slide_arrow {top: calc(50% + 70px);}
 .heading{font-size: 20px;line-height:1.6;}
