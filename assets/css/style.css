@@ -318,7 +318,7 @@ h2 {font-size: 1.5rem;}
 .banner_sec .banner_item_main .location{display: none;}
 header .contact_icons{display: none;}
 .bottom_nav{display: block;}
-.pricing_mob_container li:nth-child(2) .price{font-size: 45px;}
+.pricing_mob_container li:nth-child(2) .price{font-size: 36pxs;}
 .desclaimer_sec{padding-top: 110px!important;}
 .cta_one_banner{height: calc(60vh - 100px);}
 .about_sec .image_container{padding: 15px;border-radius: 10px;}
@@ -381,6 +381,9 @@ header .contact_detail a span{display: none;}
 .contact_sec .arrow_circle img{padding: 22px;}
 .arrow_container .slide_arrow.next-arrow {right: 6px;}
 header .logo_container img{max-width: 140px;}
+.pricing_mob_container li h2{font-size: 22px;}
+.pricing_mob_container li h5{font-size: 18px;}
+
 #formModal .cross_icon img{height: 30px;width: 30px;;}
 .arrow_container .slide_arrow {top: calc(50% + 70px);}
 .heading{font-size: 20px;line-height:1.6;}
