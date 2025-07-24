@@ -463,6 +463,7 @@ footer .description {font-size: 8px;line-height: 2;letter-spacing: 1px;}
 .nav-arrow{height: 46px!important;width: 46px!important;}
 #formModal input{font-size: 12px;}
 #formModal textarea{font-size: 12px;}
+#formModal .arrow_circle{height: 55px;width: 55px;;}
 }  
 
 .img_item_main_container{transform: scale(0.99);} 
