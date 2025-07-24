@@ -320,6 +320,7 @@ header .contact_icons{display: none;}
 .bottom_nav{display: block;}
 .pricing_mob_container li:nth-child(2) .price{font-size: 45px;}
 .desclaimer_sec{padding-top: 110px!important;}
+.cta_one_banner{height: calc(60vh - 100px);}
 .about_sec .image_container{padding: 15px;border-radius: 10px;}
 .banner_sec .absolute_container .loc_item{text-align: center;}
 .banner_sec .absolute_container h1 .span_txt{margin: 0;}
@@ -364,7 +365,7 @@ header .contact_detail a span{display: none;}
 .hightlights_sec .two_cols{padding: 36px 30px!important;}
 .banner_sec .absolute_container .content-container p{text-align: center;}
 .cta_one_banner .heading{text-align: center;font-size: 40px;}
-.cta_sec .enquire_btn_cta {right: -30px;left: inherit;bottom: -8%;}
+.cta_sec .enquire_btn_cta {right: -30px;left: inherit;bottom: -13%;}
 .master_plan_sec .enquire_btn_cta {right: -58px;left: inherit;bottom: -10%;}
 .banner_sec{height: 80vh;}
 }
