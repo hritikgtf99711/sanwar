@@ -8,7 +8,7 @@
 }
 @font-face {
 font-family: "oregano";
-src: url("../fonts/oregon_regular.ttf") format("woff2");
+src: url("../fonts/oregon_regular.woff") format("woff2");
 font-weight: 400;
 font-style: normal;
 font-display: swap;
@@ -16,7 +16,7 @@ font-display: swap;
 
 @font-face {
 font-family: "oregano";
-src: url("../fonts/oregano_light.ttf") format("woff2");
+src: url("../fonts/oregano_light.woff") format("woff2");
 font-weight: 300;
 font-style: normal;
 font-display: swap;
@@ -24,7 +24,7 @@ font-display: swap;
 
 @font-face {
 font-family: "oregano";
-src: url("../fonts/oregano_medium.ttf") format("woff2");
+src: url("../fonts/oregano_medium.woff") format("woff2");
 font-weight: 600;
 font-style: normal;
 font-display: swap;
@@ -32,7 +32,7 @@ font-display: swap;
 
 @font-face {
 font-family: "oregano";
-src: url("../fonts/oregano_bold.ttf") format("woff2");
+src: url("../fonts/oregano_bold.woff") format("woff2");
 font-weight: 700;
 font-style: normal;
 font-display: swap;
@@ -115,7 +115,7 @@ body #swiperCoverflowSlider .swiper-slide-active img{height: 480px;}
 .about_sec .content_container  h2{text-transform: capitalize;color: var(--primary-color);}
 .about_sec .enquire_btn_cta a{text-decoration: none;color: #fff;text-transform: uppercase;}
 
-.cta_one_banner{background:url("../images/cta_one_banner.jpg") no-repeat;height: calc(100vh - 100px);background-size: cover;}
+.cta_one_banner{background:url("../images/cta_one_banner.webp") no-repeat;height: calc(100vh - 100px);background-size: cover;}
 .cta_one_banner .heading{font-size: 65px;text-transform: uppercase;margin: 0;}
 .cta_one_banner .enquire_btn_cta {bottom: -13%;}
 .cta_sec  .heading  .span_txt{margin-left: 80px;}
