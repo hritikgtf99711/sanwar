@@ -362,10 +362,10 @@ header .contact_detail a span{display: none;}
 .banner_sec .banner_item_main .elevation_img{height: 60vh;object-position: 47% 100% ;}
 .banner_sec .banner_item_main h1{width: 100%;}
 .banner_sec .absolute_container .content-container{font-size: 16px;}
-.hightlights_sec .two_cols{padding: 36px 30px!important;}
+.hightlights_sec .two_cols{padding: 36px 21px!important;}
 .banner_sec .absolute_container .content-container p{text-align: center;}
 .cta_one_banner .heading{text-align: center;font-size: 40px;}
-.cta_sec .enquire_btn_cta {right: -30px;left: inherit;bottom: -13%;}
+.cta_sec .enquire_btn_cta {right: -30px;left: inherit;bottom: -14%;}
 .master_plan_sec .enquire_btn_cta {right: -58px;left: inherit;bottom: -10%;}
 .banner_sec{height: 80vh;}
 }
