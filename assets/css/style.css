@@ -373,16 +373,12 @@ header .contact_detail a span{display: none;}
 .direction_sec .circle_img{position: absolute;top: -60px;left: 50%;transform: translate(-50%, 50%);}
 }
 
-
-
 @media (max-width:768px) {
 .enquire_btn_cta {height: 120px;width: 120px;font-size: 12px;bottom: -64px;}
 .contact_sec .arrow_circle{height: 60px;width: 60px;;}
 .contact_sec .arrow_circle img{padding: 22px;}
 .arrow_container .slide_arrow.next-arrow {right: 6px;}
-    .arrow_container .slide_arrow {
-        top: calc(50% + 70px);
-    }
+.arrow_container .slide_arrow {top: calc(50% + 70px);}
 .heading{font-size: 20px;line-height:1.6;}
 .py_section{padding: 50px 0;}
 .sub_heading span{font-size: 18px;}
