@@ -124,7 +124,7 @@ body #swiperCoverflowSlider .swiper-slide-active img{height: 480px;}
 .cta_sec {color:#fff;background-size: cover;}
 .cta_sec h2{line-height: 1.5;letter-spacing: 3px;}
 .amenities_sec .amenities_itm{text-align: center;}
-.amenities_sec .amenities_itm h3{font-size: 14px;margin-top: 8px;font-weight: 400;}
+.amenities_sec .amenities_itm h3{font-size: 16px;margin-top: 8px;font-weight: 600;}
 
 .cta_sec_2{background:url("../images/cta_two_banner.jpg") no-repeat;background-size: cover; }
 .cta_sec_2 .sub_heading .border-gradient{background:linear-gradient(90deg, #f5efe900 0%, #ffffff 50%, #f5efe900 100%);}
